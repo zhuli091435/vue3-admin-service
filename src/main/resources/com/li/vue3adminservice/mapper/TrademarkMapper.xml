@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.li.vue3adminservice.mapper.TrademarkMapper">
+
+    <resultMap id="BaseResultMap" type="com.li.vue3adminservice.pojo.Trademark">
+            <id property="id" column="id" />
+            <result property="name" column="name" />
+            <result property="logoUrl" column="logo_url" />
+            <result property="createTime" column="create_time" />
+            <result property="updateTime" column="update_time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,logo_url,create_time,update_time
+    </sql>
+</mapper>
