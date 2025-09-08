@@ -1,8 +1,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/testdb?useSSL=false&serverTimezone=Asia/Shanghai
-    username: root
+    url: jdbc:mysql://36.152.34.54:13307/testdb?useSSL=false&serverTimezone=Asia/Shanghai
+    username: zhuli
     password: qwe123!@#
   servlet:
     multipart:
@@ -10,5 +10,8 @@ spring:
       max-request-size: 100MB  # 总上传数据最大 100MB
 file:
   upload-dir: ./upload/files/   # 项目根目录下的文件夹
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 
